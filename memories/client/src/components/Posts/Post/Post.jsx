@@ -4,7 +4,7 @@ import useStyles from './styles.js';
 function Post() {
     const classes = useStyles();
   return (
-    <div>
+    <div className={classes.card}>
       post
     </div>
   )
