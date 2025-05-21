@@ -1,2 +1,49 @@
-# Event-Mangament
-making the react app with full of functionality.
+## 📦 NPM Commands (Client & Server)
+
+### 🔧 Server Side (`/server`)
+
+```bash
+# Initialize the project (if not already initialized)
+npm init -y
+
+# Install required dependencies
+npm install express mongoose cors body-parser
+
+# Install development dependencies
+npm install --save-dev nodemon
+
+# Start the server with hot-reloading
+npm run start
+```
+
+> Make sure `package.json` contains:
+
+```json
+"scripts": {
+  "start": "nodemon index.js"
+}
+```
+
+---
+
+### 🎨 Client Side (`/client`)
+
+```bash
+# Create Vite + React app (only if starting from scratch)
+npm create vite@latest client --template react
+
+# Move into the client directory
+cd client
+
+# Install required dependencies
+npm install @mui/material @mui/icons-material @mui/styles @emotion/react @emotion/styled
+npm install axios moment react-file-base64
+npm install redux react-redux redux-thunk
+
+# Install development tools
+npm install -D vite @vitejs/plugin-react eslint eslint-plugin-react eslint-plugin-react-hooks
+
+# Start the client in development mode
+npm run dev
+```
+
