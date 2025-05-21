@@ -6,7 +6,6 @@ import Posts from "./components/Posts/Posts";
 import useStyles from './styles.js';
 import { getPosts } from './actions/posts.jsx'
 import { useDispatch } from "react-redux";
-// import {}
 
 function App() {
   const [currentId,setCurrentId] = useState(null);
@@ -14,7 +13,8 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getPosts());
-  }, [dispatch])
+    console.log('currentID');
+  }, [dispatch, currentId]); 
   return (
    <>
     <Container maxWidth='lg'>
