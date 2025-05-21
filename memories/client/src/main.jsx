@@ -8,6 +8,7 @@ import reducers from './reducers';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import {StylesProvider} from '@mui/styles'
+import './index.css';
 
 const theme = createTheme();
 // const store = createStore(reducers, compose(applyMiddleware(thunk)));

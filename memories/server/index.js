@@ -7,13 +7,13 @@ import postRoutes from './routes/posts.js';
 
 const app = express();
 app.use(cors());
-app.use(express.json());
 
-app.use('/posts',postRoutes);
 
 app.use(bodyParset.json({ limit:"30mb",extended: true}));
 app.use(bodyParset.urlencoded({ limit:"30mb",extended: true}));
+app.use(express.json());
 
+app.use('/posts',postRoutes);
 const  CONNECTION_URL = "mongodb+srv://utsavvachhaniit22:utsav_memories_1@clustermemories.buqopvf.mongodb.net/?retryWrites=true&w=majority&appName=clusterMemories";
 const PORT = process.env.PORT || 5000;
 
